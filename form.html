@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Sign Up</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
+	<link rel="stylesheet" href="assets/css/style.css">
+	<script type="text/javascript" src="assets/js/jquery.min.js"></script>
+	<script type="text/javascript" src="assets/js/bootstrap.js"></script>
+</head>
+<body>
+	<div class="container-fluid">
+		<div class="row-fluid">
+			<div class="col-sm-20">
+				<img class="img-responsive" alt="bear_banner01.svg" src="assets/img/bear_banner01.svg">
+			</div>
+		</div>
+
+		<nav class="navbar navbar-default">
+			<div class="container-fluid">
+				<ul class="nav navbar-nav">
+					<li><a href="index.html"><img style="width: 20px;" src="assets/img/home.png"></a></li>
+					<li><a href="novidades.html">New Arrivals</a></li>
+					<li><a href="promo.html">Sales </a></li>
+					<li class="active"><a href="form.html">Sign Up</a></li>
+					<li class="dropdown">
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#">Categories</a>
+						<ul class="dropdown-menu">
+							<li><a href="perifericos.html">Computer Peripherals</a></li>
+							<li><a href="celulares.html">Mobile Phones</a></li>
+							<li><a href="livros.html">Books</a></li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#"><img style="width: 20px;" src="assets/img/cart.png"></a></li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="index_pt.html"><img style="width: 20px;" src="assets/img/brazil.png"></a></li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="index.html"><img style="width: 20px;" src="assets/img/use.png"></a></li>
+				</ul>
+			</div>
+		</nav>
+
+		<div class="list-group col-md-2" id="menu_lateral">
+			<h3>Categories</h3>
+			  <a href="novidades.html" class="list-group-item active">New Arrivals</a>
+			  <a href="perifericos.html" class="list-group-item">Computer Peripherals</a>
+			  <a href="celulares.html" class="list-group-item">Mobile Phones</a>
+			  <a href="livros.html" class="list-group-item">Books</a>
+		</div>
+
+			<div class="col-md-5" id="conteudo">
+				<form action="#" action="#" method="#" class="">
+
+					<fieldset><legend>User Identification</legend><!--dentificação do Usuário-->
+						<div class="form-group">
+							<label for="nome">Name:</label>
+							<input type="text" class="form-control">
+						</div>
+						<div class="form-group">
+							<label for="email">Email:</label>
+							<input type="email" name="email" maxlength="50" class="form-control">
+						</div>
+						<div class="form-group">
+							<label>Create password:</label>
+							<input type="password" name="senha" maxlength="30" class="form-control">
+						</div>
+
+						<div class="form-group">
+							<div class="radio-line">
+								<label for="sexo" id="sexo">Gender:</label>
+								<input type="radio" class="radio-line" name="sexo" value="masc">Male
+								<input type="radio" class="radio-line" name="sexo" value="fem">Female
+							</div>
+						</div>
+						<label for="nascimento">Birth Date:</label>
+							<input type="date" class="date">
+				</fieldset>
+			</div>
+				<!--Endereço do Usuário-->	
+				<form action="">
+					<fieldset><legend>Address</legend>
+						<div class="form-group">
+							<label>Street:</label>
+							<input type="text" class="form-control" name="rua" size="50" maxlength="50" placeholder="Street, Avenue ...">
+						</div>
+						<div class="form-group">
+							<div class="lb-number">
+								<label>Number:</label>
+								<input type="number" class="form-control" name="meses" min="0" maxlength="99999999999999">
+							</div>
+						</div>
+						<div class="form-group">
+							<label>CEP:</label>
+							<input type="text" class="form-control" name="cep" size="10" maxlength="9">
+						</div>
+						<div class="form-group">
+							<label>City:</label>
+							<input type="text" class="form-control" name="rua" size="50" maxlength="50" placeholder="What is your city?" class="form-control">
+						</div>
+					</fieldset>
+				</form>
+				<!--Mensagem do Usuário-->
+			<fieldset><legend style="margin-left: 20px; padding-top: 30px;">User Message</legend>
+					<div class="form-group">
+						<div class="col-md-6">
+							<textarea class="form-control" rows="5" placeholder="Write your message." class="form-control"></textarea>
+						</div>
+					</div>					
+					<!-- Button trigger modal -->
+						<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal" style="margin-left: 20px;">
+						Terms of use
+						</button>
+					<!-- Modal -->
+					<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+						<div class="modal-dialog" role="document">
+							<div class="modal-content">
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+									<h4 class="modal-title" id="myModalLabel">Terms of use:</h4>
+								</div>
+								<div class="modal-body">
+									By using Black Friday website Services, you agree to these conditions. Please read them carefully.					
+									<br>
+									1) ELECTRONIC COMMUNICATIONS<br>
+									When you use Black Friday website Services, or send e-mails, text messages, and other communications from your desktop or mobile device to us, you may be communicating with us electronically. You consent to receive communications from us electronically, such as e-mails, texts, mobile push notices, or notices and messages on this site or through the other Black Friday Services, such as our Message Center, and you can retain copies of these communications for your records. You agree that all agreements, notices, disclosures, and other communications that we provide to you electronically satisfy any legal requirement that such communications be in writing. 
+									<br>
+									2) RISK OF LOSS<br>
+									All purchases of physical items from Black Friday are made pursuant to a shipment contract. This means that the risk of loss and title for such items pass to you upon our delivery to the carrier.
+									<br>
+									3) RETURNS, REFUNDS AND TITLE<br>
+									Black Friday does not take title to returned items until the item arrives at our fulfillment center. At our discretion, a refund may be issued without requiring a return. In this situation, Black Friday does not take title to the refunded item. For more information about our returns and refunds, please see our Returns Center.
+									<br>
+									4) PRODUCT DESCRIPTIONS<br>
+									Black Friday attempts to be as accurate as possible. However, Black Friday does not warrant that product descriptions or other content of any Black Friday Service is accurate, complete, reliable, current, or error-free. If a product offered by Black Friday itself is not as described, your sole remedy is to return it in unused condition. 
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+									<button type="button" class="btn btn-primary">Finish</button>
+								</div>
+							</div>
+						</div>
+					</div>
+			</fieldset>
+		</form>
+		<div class="rodape">
+			<p>&copy; Copyright 2017 - by Isaque Kaio and André Luiz</p>
+		</div>
+	</div>
+</body>
+</html>
